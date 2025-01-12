@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import logo from "../assets/images/logo-white.svg";
 import emailjs from "emailjs-com";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactModal = () => {
   const [formData, setFormData] = useState({
@@ -20,18 +22,35 @@ const ContactModal = () => {
   // Send Email
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
-      .send("service_di32ufs", "template_cv8eims", formData, "91fMfT904NKginBHc")
+      .send(
+        "service_s0zuqcu",
+        "template_di3n5wr",
+        formData,
+        "ZzC2Nh_257Fqy2DBo"
+      )
       .then((result) => {
-        console.log("Email sent successfully:", result.text);
+        // Show success toast
+        toast.success("Email sent successfully!");
+
+        // Reset form fields
+        setFormData({
+          name: "",
+          email: "",
+          contact: "",
+          message: "",
+        });
       })
       .catch((error) => {
-        console.error("Error sending email:", error.text);
+        // Show error toast
+        toast.error("Failed to send email. Please try again!");
       });
   };
 
   return (
     <>
+      <ToastContainer />
       {/* Modal */}
       <div
         className="modal fade"
@@ -104,8 +123,10 @@ const ContactModal = () => {
                     ></textarea>
                   </div>
                   <button
+                    data-dismiss="contactModal"
                     type="submit"
                     className="btn bg-btn-primarycl w-100 border-radius-10"
+                    data-bs-dismiss="modal"
                   >
                     Submit <i className="bi bi-arrow-right"></i>
                   </button>
@@ -128,7 +149,8 @@ const ContactModal = () => {
                     </div>
                     <div className="data-contact">
                       <p className="mb-1 contact-p">
-                      Faisal Al Omar Complex, Al Othman Street, Kuwait City, Hawally.
+                        Faisal Al Omar Complex, Al Othman Street, Kuwait City,
+                        Hawally.
                       </p>
                     </div>
                   </div>
