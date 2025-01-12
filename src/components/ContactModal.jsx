@@ -128,8 +128,7 @@ const ContactModal = () => {
                     </div>
                     <div className="data-contact">
                       <p className="mb-1 contact-p">
-                        Office No 9, Mezzanine Floor,Faisal Al Omar Complex, Al
-                        Othman Street, Kuwait City, Hawally
+                      Faisal Al Omar Complex, Al Othman Street, Kuwait City, Hawally.
                       </p>
                     </div>
                   </div>
@@ -143,7 +142,7 @@ const ContactModal = () => {
                     </div>
                     <div className="data-contact">
                       <p className=" mb-0">Contact Us</p>
-                      <p>+965 6609 9477</p>
+                      <p>+965 60353965</p>
                     </div>
                   </div>
                 </div>

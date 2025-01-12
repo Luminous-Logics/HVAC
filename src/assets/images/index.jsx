@@ -1,5 +1,10 @@
+
 export default {
     heroimage:require("./HeroNew.webp"),
+    heroelectric:require("./Electrical_Hero.webp"),
+    herohvac:require("./HVAC_Hero.webp"),
+    heroswimming:require("./Swimming_Hero.webp"),
+    hertrade:require("./Trading_Hero.webp"),
     logo:require("./logo.png"),
     ResidentialImage:require("./ResidentialImage.png"),
     CommercialImage:require("./CommercialImage.png") ,
@@ -28,6 +33,7 @@ export default {
     swimmingpool:require("./swimming-pool.jpg"),
     electric:require("./Electric.jpg"),
     trade:require("./Equipment.png"),
+    duct:require("./duct-ac-installation-services.jpg"),
     
 
 

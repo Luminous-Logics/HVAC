@@ -14,8 +14,8 @@ const HVACSwiper = () => {
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       navigation={false}
-      pagination={false}
-      autoplay={false}
+      pagination={{clickable:true}}
+      autoplay={true}
       spaceBetween={0}
       slidesPerView={1}
       loop={true}

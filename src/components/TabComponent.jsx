@@ -1,11 +1,10 @@
 import React, { useState, useRef } from "react";
-import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, A11y, Autoplay  } from "swiper/modules";
+import { Navigation, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import images from "../assets/images";
-import ScheduleServiceLink from "../components/ScheduleServiceLink"
+import ScheduleServiceLink from "../components/ScheduleServiceLink";
 
 const TabComponent = () => {
   const tabData = [
@@ -116,7 +115,7 @@ const TabComponent = () => {
       id: "pills-energy-efficiency",
       title: "Energy Efficiency",
       heading: "Energy Efficiency Services",
-      image: images.heating,
+      image: images.energy,
       subDetails: [
         {
           heading: "Energy Audits",
@@ -137,7 +136,7 @@ const TabComponent = () => {
       id: "pills-specialized",
       title: "Duct Installation ",
       heading: "Duct Installation Services",
-      image: images.heating,
+      image: images.duct,
       subDetails: [
         {
           heading: "Duct Installation",

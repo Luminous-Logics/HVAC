@@ -773,7 +773,7 @@
     width: 100%;
     min-height: 100vh;
     position: relative;
-    padding: 80px 0;
+    padding: 0px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1456,6 +1456,10 @@
           font-weight: 100;
           line-height: 1.3rem;
           color:#ffffff9c;
+          @media(max-width:600px)
+        {
+          font-size: 0.8rem;
+        }
         }
       }
       
@@ -1541,6 +1545,10 @@
             font-weight: 100;
             line-height: 1.3rem;
             color:#ffffff9c;
+            @media(max-width:600px)
+            {
+              font-size: 0.9rem;
+            }
           }
         }
         
@@ -1953,4 +1961,14 @@
   background: #fefefe3d;
   border-radius: 50%;
   padding: 9px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: hsl(180deg 51% 52% / 35%)!important;
+
+}
+
+.swiper-pagination-bullet {
+ 
+  background: hsla(180, 51.4%, 51.6%, 1)!important;
 }
